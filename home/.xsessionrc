@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Color Scheme
+exec wal --vte -R &
+# Lock Screen
+exec xss-lock -- ~/.local/bin/transfer-sleep-lock-i3lock.sh &
+# Window compositor (for transparency)
+exec compton &
+# Screen red shifter
+exec redshift &
+# Program for applying special rules for what is and isn't transparent
+exec devilspie -a &
